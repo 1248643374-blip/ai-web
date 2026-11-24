@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人网站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>你好，我是 Yu</h1>
+    <p class="tagline">学生 · 喜欢写代码、调试和一点点计算器</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>关于我</h2>
+      <p>这是一个用 HTML、CSS 和 JavaScript 做的简单个人网站。下面是一个可以真正计算的计算器。</p>
+    </section>
+
+    <section class="calculator" aria-label="计算器">
+      <h2>计算器</h2>
+      <div class="calc">
+        <div class="calc-top">
+          <span class="calc-mark">YU</span>
+          <span id="expression" class="expression"></span>
+        </div>
+        <div id="display" class="display" aria-live="polite">0</div>
+        <div class="keys">
+          <button type="button" data-action="clear">C</button>
+          <button type="button" data-action="sign">±</button>
+          <button type="button" data-action="percent">%</button>
+          <button type="button" data-action="operator" data-value="/">÷</button>
+
+          <button type="button" data-action="digit" data-value="7">7</button>
+          <button type="button" data-action="digit" data-value="8">8</button>
+          <button type="button" data-action="digit" data-value="9">9</button>
+          <button type="button" data-action="operator" data-value="*">×</button>
+
+          <button type="button" data-action="digit" data-value="4">4</button>
+          <button type="button" data-action="digit" data-value="5">5</button>
+          <button type="button" data-action="digit" data-value="6">6</button>
+          <button type="button" data-action="operator" data-value="-">−</button>
+
+          <button type="button" data-action="digit" data-value="1">1</button>
+          <button type="button" data-action="digit" data-value="2">2</button>
+          <button type="button" data-action="digit" data-value="3">3</button>
+          <button type="button" data-action="operator" data-value="+">+</button>
+
+          <button type="button" class="span-2" data-action="digit" data-value="0">0</button>
+          <button type="button" data-action="decimal">.</button>
+          <button type="button" class="equals" data-action="equals">=</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Yu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
